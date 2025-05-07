@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Box Challenge</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .outer-div{
+        height: 100%;
+        width: 100%;
+        margin: 20px;
+    }
+    
+    .All-Boxes{
+        background-color: #c15ad6;
+        color: white;
+        margin: 4px;
+        padding: 5px;
+        font-size: 20px;
+        border-radius: 10px;
+        display: inline-flex;
+    }
+    .boxes-cont1{
+        height: 200px;
+        width: 480px;
+    }
+    .boxes-cont2{
+        height: 30px;
+        width: 355px;
+    }
+    .boxes-cont3{
+        height: 30px;
+        width: 280px;
+    }
+    .box1{
+        /* display: flex; */
+        flex-direction: column;
+    }
+    .inner1-cont1 ,  .inner2-cont2 , .inner3-cont3{
+        display: flex;
+        /* flex-direction: c; */
+    }
+    .inner-boxes{
+        background-color: #fce2fc;
+        height: 40px;
+        margin: 5px;
+        border-radius: 6px;
+        padding: 4px;
+    }
+    .box-in-1 , .box-in-2 , .box-in-3{
+        
+        width: 145px;
+    }
+    .box-in-4 , .box-in-5  , .box-in-6 , .box-in-7{
+       width: 105px;
+    }
+
+    .box-in-8 , .box-in-9  , .box-in-10 , .box-in-11 , .box-in-12{
+       width: 79px;
+    }
+    
+</style>
+<body>
+    <div class="outer-div">
+    <div class="container1">
+        <div class="All-Boxes boxes-cont1 box1">1
+           <div class="inner1-cont1">
+            <div class="inner-boxes box-in-1">1</div>
+            <div class="inner-boxes box-in-2">2</div>
+            <div class="inner-boxes box-in-3">3</div>
+            </div>
+            <div class="inner2-cont2">
+            <div class="inner-boxes box-in-4">1</div>
+            <div class="inner-boxes box-in-5">2</div>
+            <div class="inner-boxes box-in-6">3</div>
+            <div class="inner-boxes box-in-7">4</div>
+        </div>
+        <div class="inner3-cont3">
+            <div class="inner-boxes box-in-8">1</div>
+            <div class="inner-boxes box-in-9">2</div>
+            <div class="inner-boxes box-in-10">3</div>
+            <div class="inner-boxes box-in-11">4</div>
+            <div class="inner-boxes box-in-12">5</div>
+            </div>
+        </div>
+        <div class="All-Boxes boxes-cont1 box2">2</div>
+        <div class="All-Boxes boxes-cont1 box3">3</div>
+    </div>
+
+    <div class="container2">
+        <div class="All-Boxes boxes-cont2 box4">1</div>
+        <div class="All-Boxes boxes-cont2 box5">2</div>
+        <div class="All-Boxes boxes-cont2 box6">3</div>
+        <div class="All-Boxes boxes-cont2 box7">4</div>
+    </div>
+
+    <div class="container3">
+        <div class="All-Boxes boxes-cont3 box8">1</div>
+        <div class="All-Boxes boxes-cont3 box9">2</div>
+        <div class="All-Boxes boxes-cont3 box10">3</div>
+        <div class="All-Boxes boxes-cont3 box11">4</div>
+        <div class="All-Boxes boxes-cont3 box12">5</div>
+    </div>    
+    </div>    
+
+</body>
+</html>
